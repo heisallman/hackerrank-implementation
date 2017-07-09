@@ -18,7 +18,7 @@ Given *m*, *d*, and the sequence of integers written on each square of Lily's ch
 ```
 #### Input Format
 The first line contains an integer denoting *n* (the number of squares in the chocolate bar). 
-#
+
 The second line contains *n* space-separated integers describing the respective values of the numbers written on each consecutive square of chocolate. 
-#
+
 The third line contains two space-separated integers describing the respective values of *d* (Ron's birth day) and *m* (Ron's birth month).
