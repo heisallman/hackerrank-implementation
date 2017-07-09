@@ -1,12 +1,9 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let numOfSocks = 9
-let sockValues = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+let numOfSocks = Int(readLine()!)!
+let sockValues = readLine()!.components(separatedBy: " ").map{ Int($0)! }
 
 
 var dictionary = [Int:Int]()

@@ -1,12 +1,10 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
-
-var str = "Hello, playground"
+// Enter your code here
 
 
-let numOfGames = 10
-let scores = [3, 4, 21, 36, 10, 28, 35, 5, 24, 42]
+let numOfGames = Int(readLine()!)!
+let scores = readLine()!.components(separatedBy: " ").map{ Int($0)! }
 
 var minScore = scores[0]
 var maxScore = scores[0]
@@ -25,4 +23,5 @@ for score in scores {
     }
 }
 
-print("\(beatHighest, beatLowest)")
+print("\(beatHighest) \(beatLowest)")
+

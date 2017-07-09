@@ -1,12 +1,9 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-//let numOfClouds = 6
-let clouds = [0, 0, 0, 0, 1, 0]
+let number = Int(readLine()!)!
+let clouds = readLine()!.components(separatedBy:" ").map({ Int($0)!})
 
 var i = 0
 var steps = 0

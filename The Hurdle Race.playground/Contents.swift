@@ -1,12 +1,9 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let array = [5,7]
-let hurdles = [2,5,4,5,2]
+let array = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+let hurdles = readLine()!.components(separatedBy: " ").map{ Int($0)! }
 
 var maximumJump = array[1]
 var numOfEnergyDrinks = 0

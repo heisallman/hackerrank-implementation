@@ -1,16 +1,16 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
+let t = Int(readLine()!)!
 
-
-let array:[Double] = [3,9]
-
-var count = 0
-
-let sqrt1 = Int(ceil(sqrt(array[0])))
-let sqrt2 = Int(floor(sqrt(array[1])))
-
-let result = sqrt2 - sqrt1 + 1
-print(result)
+for _ in 1...t {
+    let input = readLine()!.components(separatedBy:" ").map { Double($0)! }
+    var count = 0
+    
+    let sqrt1 = Int(ceil(sqrt(input[0])))
+    let sqrt2 = Int(floor(sqrt(input[1])))
+    
+    let result = sqrt2 - sqrt1 + 1
+    print(result)
+}

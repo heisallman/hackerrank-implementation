@@ -1,28 +1,29 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
+let n = Int(readLine()!)!
 
-
-let input = 106108048
-
-var digits : [Int] = []
-var count = 0
-
-var num = input
-while num > 0 {
-    digits.insert(num % 10, at: 0)
-    num /= 10
-}
-
-for digit in digits {
+for _ in 1...n {
+    var input = Int(readLine()!)!
+    var num = input
     
-    if digit == 0 {
-        continue
+    var digits : [Int] = []
+    var count = 0
+    
+    while num > 0 {
+        digits.insert(num % 10, at: 0)
+        num /= 10
     }
-    if input % digit == 0 {
-        count += 1
+    
+    for digit in digits {
+        
+        if digit == 0 {
+            continue
+        }
+        if input % digit == 0 {
+            count += 1
+        }
     }
     print(count)
 }

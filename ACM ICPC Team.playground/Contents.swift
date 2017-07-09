@@ -1,19 +1,17 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let input = [4,5]
+let input = readLine()!.components(separatedBy:" ").map { Int($0)! }
 let n = input[0]
 let t = input[1]
 
-var topics = [["10101"],  // person 1 knows topics 1,3 & 5
-    ["11100"],  // person 2 knows topics 1,2 & 3
-    ["11010"],  // person 3 knows topics 1,2 & 4
-    ["00101"]]  // person 4 knows topics 3 & 5
+var topics = [[String]]()
 
+for _ in 1...n {
+    let line = readLine()!.components(separatedBy:" ").map { String($0)! }
+    topics.append(line)
+}
 
 var maxTeams = NSCountedSet()
 var maxTopics = 0

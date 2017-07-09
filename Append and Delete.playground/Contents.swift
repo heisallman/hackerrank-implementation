@@ -1,17 +1,12 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let s = "abcdef"
-let t = "fedcba"
-let k = 15
-
+let s = readLine()!
+let t = readLine()!
+let k = Int(readLine()!)!
 
 var sMap = s.characters
-
 var sString = String(sMap)
 var count = 0
 
@@ -40,7 +35,6 @@ for i in 0...sMap.count {
         break
     }
 }
-
 
 if String(t.characters) == sString && count <= k {
     print("Yes")

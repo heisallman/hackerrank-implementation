@@ -1,12 +1,11 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
-
-var str = "Hello, playground"
+// Enter your code here
 
 
-let numOfBirds = 6
-let birds = [1, 4, 4, 4, 5, 3]
+let n = Int(readLine()!)!
+let birds = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+
 
 var counts = [Int: Int]()
 
@@ -16,3 +15,4 @@ let mostFrequent = countedSet.max { countedSet.count(for: $0) < countedSet.count
 if let mostFrequent = mostFrequent {
     print(mostFrequent)
 }
+ 

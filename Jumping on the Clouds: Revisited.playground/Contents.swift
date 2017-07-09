@@ -1,16 +1,6 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
-
-var str = "Hello, playground"
-
-
-let input = [8,2]
-let numOfClouds = input[0]
-let jumpDistance = input[1]
-
-let clouds = [0,0,1,0,0,1,1,0]
-
+// Enter your code here
 
 func jumpingOnClouds(_ clouds: [Int], _ jumpDistance:Int) -> Int {
     
@@ -27,5 +17,10 @@ func jumpingOnClouds(_ clouds: [Int], _ jumpDistance:Int) -> Int {
     return energy
 }
 
+let input = readLine()!.components(separatedBy:" ").map { Int($0)! }
+let numOfClouds = input[0]
+let jumpDistance = input[1]
+
+let clouds = readLine()!.components(separatedBy:" ").map { Int($0)! }
 
 print(jumpingOnClouds(clouds,jumpDistance))

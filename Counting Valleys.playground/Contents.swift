@@ -1,18 +1,12 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
+let n = Int(readLine()!)!
+let input = readLine()!
 
-
-let input = "UDDDUDUU"
-
-let directions = Array(input.characters).map({
-    String($0)
-})
-
+let directions = Array(input.characters).map{ String($0) }
 var altitudes = [Int]()
-
 var altitude = 0
 var valleys = 0
 

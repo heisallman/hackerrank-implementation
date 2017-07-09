@@ -1,12 +1,9 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let string = "aba"
-let number = 10
+let string = readLine()!
+let number = Int(readLine()!)!
 
 var result = 0
 

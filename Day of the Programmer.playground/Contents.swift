@@ -1,16 +1,14 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
+let year = Int(readLine()!)!
 
 func dayOfProgrammer(in year: Int) -> String {
     
     var dayTotal = 0
     
     for i in 1...8 {
-        
         let dateComponents = DateComponents(year: year, month: i)
         let calendar = Calendar.current
         let date = calendar.date(from: dateComponents)!
@@ -34,8 +32,7 @@ func dayOfProgrammer(in year: Int) -> String {
     default:
         return "\(dop).09.\(year)"
     }
-    
 }
 
 
-print(dayOfProgrammer(in: 2000))
+print(dayOfProgrammer(in: year))

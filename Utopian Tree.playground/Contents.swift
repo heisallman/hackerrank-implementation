@@ -1,9 +1,6 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
-
-var str = "Hello, playground"
-
+// Enter your code here
 
 func calcHeight(_ startHeight: Int, _ growthCycles: Int) -> Int {
     
@@ -33,11 +30,9 @@ func calcHeight(_ startHeight: Int, _ growthCycles: Int) -> Int {
 }
 
 
-calcHeight(1, 1)
-calcHeight(1, 2)
-calcHeight(1, 3)
-calcHeight(1, 4)
-calcHeight(1, 5)
-calcHeight(1, 6)
-calcHeight(1, 7)
-calcHeight(1, 8)
+let t = Int(readLine()!)!
+
+for _ in 1...t {
+    let n = Int(readLine()!)!
+    print(calcHeight(1, n))
+}

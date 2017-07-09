@@ -1,11 +1,10 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
+// read array
+let kangarooArr = readLine()!.components(separatedBy: " ").map{ Int($0)! }
 
-
-let kangarooArr = [43,2,70,2]
 
 var kangaroo1Position = kangarooArr[0]
 let kangaroo1Velocity = kangarooArr[1]
@@ -18,8 +17,6 @@ while true {
     
     kangaroo1Position += kangaroo1Velocity
     kangaroo2Position += kangaroo2Velocity
-    
-    print("\(kangaroo1Position, kangaroo2Position)")
     
     if kangaroo1Position == kangaroo2Position {
         print("YES")

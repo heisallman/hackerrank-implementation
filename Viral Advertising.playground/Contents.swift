@@ -1,12 +1,6 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
-
-var str = "Hello, playground"
-
-
-let n = 3
-
+// Enter your code here
 
 func calcViral(_ startNum:Int, total totalNum: Int, days day: Int) -> Int {
     
@@ -24,10 +18,6 @@ func calcViral(_ startNum:Int, total totalNum: Int, days day: Int) -> Int {
     return calcViral((viralPeople * 3), total: cumulativePeople, days: remainingDays)
 }
 
+let n = Int(readLine()!)!
+print(calcViral(5, total: 0, days: n))
 
-
-calcViral(5, total: 0, days: 1)
-calcViral(5, total: 0, days: 2)
-calcViral(5, total: 0, days: 3)
-calcViral(5, total: 0, days: 4)
-calcViral(5, total: 0, days: 5)

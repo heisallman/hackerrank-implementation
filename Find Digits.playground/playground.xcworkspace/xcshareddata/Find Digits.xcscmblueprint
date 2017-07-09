@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "71A83C64E6ED65F3133622DC62FA03B48A7A6193",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0118BA62038948074B26D6CC24FEDFB4DFED11F0" : 9223372036854775807,
+    "71A83C64E6ED65F3133622DC62FA03B48A7A6193" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8A76BA0A-3710-4B99-BF6A-00F20F43DBAC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0118BA62038948074B26D6CC24FEDFB4DFED11F0" : "",
+    "71A83C64E6ED65F3133622DC62FA03B48A7A6193" : "implementation\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Find Digits",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Find Digits.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/john-allman\/hackerrank.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0118BA62038948074B26D6CC24FEDFB4DFED11F0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/john-allman\/implementation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "71A83C64E6ED65F3133622DC62FA03B48A7A6193"
+    }
+  ]
+}

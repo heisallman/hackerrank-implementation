@@ -1,23 +1,13 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-// Grading Students
-let n = 4
-let G1 = 73
-let G2 = 67
-let G3 = 38
-let G4 = 33
-
-
-let arr = [G1,G2,G3,G4]
-var result:[Int] = []
+let n = Int(readLine()!)! 
 var final = 0
 
-for grade in arr {
+for _ in 1 ... n {
+    let grade = Int(readLine()!)!
+    
     switch grade {
     case _ where grade < 38:
         final = grade
@@ -30,5 +20,3 @@ for grade in arr {
     }
     print(final)
 }
-
-//print(result)

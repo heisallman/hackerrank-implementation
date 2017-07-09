@@ -1,16 +1,12 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let array = [7,3]
-let numbers = Set([1,2,4,5,7,8,10])
+let array = readLine()!.components(separatedBy:" ").map { Int($0)! }
+let numbers = Set(readLine()!.components(separatedBy:" ").map { Int($0)! })
 
 let n = array[0]
-var d = array[1]
-
+let d = array[1]
 
 var count = 0
 
@@ -20,5 +16,4 @@ for number in numbers {
     }
 }
 
-print(numbers)
 print(count)

@@ -1,29 +1,25 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
+let num = Int(readLine()!)!
 
-
-let num = 2
-let array = [10,7]
-let arrivalTimes = [26, 94, -95, 34, 67, -97, 17, 52, 1, 86]
-
-
-let students = array[0]
-let threshold = array[1]
-
-var lateStudents = 0
-
-for arrivals in arrivalTimes {
-    if arrivals > 0 {
-        lateStudents += 1
+for _ in 1...num {
+    let array = readLine()!.components(separatedBy:" ").map { Int($0)! }
+    let arrivalTimes = readLine()!.components(separatedBy:" ").map { Int($0)! }
+    
+    let students = array[0]
+    let threshold = array[1]
+    var lateStudents = 0
+    
+    for arrivals in arrivalTimes {
+        if arrivals > 0 {
+            lateStudents += 1
+        }
     }
+    print((students - lateStudents) < threshold ? "YES" : "NO")
 }
 
-print(students)
-print(lateStudents)
-print(students - lateStudents)
-print(threshold)
 
-print((students - lateStudents) < threshold ? "YES" : "NO")
+
+

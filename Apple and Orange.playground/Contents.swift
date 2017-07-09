@@ -1,15 +1,12 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let hitRange = [2,3]
-let treePoints = [1,5]
-let applesOranges = [1,1]
-let apples = [2]
-let oranges = [-2]
+let hitRange = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+let treePoints = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+let applesOranges = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+let apples = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+let oranges = readLine()!.components(separatedBy: " ").map{ Int($0)! }
 
 
 var appleInRange = 0

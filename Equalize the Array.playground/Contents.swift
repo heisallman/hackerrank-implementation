@@ -1,11 +1,9 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let array = [3,3,2,1,3]
+let number = Int(readLine()!)!
+let array = readLine()!.components(separatedBy:" ").map({Int($0)!})
 
 var set = NSCountedSet(array: array)
 var dictionary = [Int:Int]()

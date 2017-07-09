@@ -1,15 +1,6 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
-
-var str = "Hello, playground"
-
-
-let t = 5
-
-let gifts = [7, 7]
-let costs = [4, 2, 1]
-
+// Enter your code here
 
 func taum(_ gifts: [Int], _ costs: [Int]) -> Int {
     
@@ -43,5 +34,12 @@ func taum(_ gifts: [Int], _ costs: [Int]) -> Int {
     return blackTotal + whiteTotal
 }
 
+let t = Int(readLine()!)!
 
-print(taum(gifts, costs))
+for _ in 1...t {
+    let gifts = readLine()!.components(separatedBy:" ").map { Int($0)! }
+    let costs = readLine()!.components(separatedBy:" ").map { Int($0)! }
+    print(taum(gifts, costs))
+}
+
+

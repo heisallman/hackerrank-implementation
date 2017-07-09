@@ -1,13 +1,10 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let arr1 = [4,1]
-var arr2 = [3,10,2,9]
-let total = 7
+let arr1 = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+var arr2 = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+let total = Int(readLine()!)!
 
 arr2.remove(at: arr1[1])
 let halfbill = (arr2.reduce(0, +))/2

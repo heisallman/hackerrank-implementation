@@ -1,40 +1,27 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let q = 2
-
-let n = 2
-let matrix = [[999789250, 999886349],
-              [999654053, 999789250]]
-
+let q = Int(readLine()!)!
+var matrix = [[Int]]()
+var n = 0
 
 func ballSwap(_ matrix: [[Int]]) -> String {
-    
     var columns = [Int]()
-    
     for i in 0..<n {
-        let balls = matrix.map({
-            $0[i]
-        }).reduce(0, {
-            $0 + $1
-        })
+        let balls = matrix.map({ $0[i] }).reduce(0, { $0 + $1 })
         columns.append(balls)
     }
-    
-    let rows = matrix.map({
-        $0.reduce(0, {
-            $0 + $1
-        })
-    })
-    
-    print(rows,columns)
-    
+    let rows = matrix.map({ $0.reduce(0, { $0 + $1 }) })
     return rows.sorted() == columns.sorted() ? "Possible" : "Impossible"
 }
 
-
-print(ballSwap(matrix))
+for _ in 1...q {
+    n = Int(readLine()!)!
+    matrix = [[Int]]()  // reset matrix for each new round
+    for _ in 1...n {
+        let line = readLine()!.components(separatedBy:" ").map { Int($0)! }
+        matrix.append(line)
+    }
+    print(ballSwap(matrix))
+}

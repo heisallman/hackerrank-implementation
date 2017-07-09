@@ -1,12 +1,9 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let num = 6
-let a = [4,6,5,3,3,1]
+let num = Int(readLine()!)!
+let a = readLine()!.components(separatedBy: " ").map{ Int($0)! }
 
 let set = NSCountedSet(array: a)
 var maxNum = 0

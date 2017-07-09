@@ -1,13 +1,10 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
-
-var str = "Hello, playground"
+// Enter your code here
 
 
-let n = 6
-
-var sticks = [8, 8, 14, 10, 3, 5, 14, 12]
+let n = Int(readLine()!)!
+var sticks = readLine()!.components(separatedBy:" ").map { Int($0)! }
 
 func cutSticks(_ input: [Int]) -> [Int] {
     
@@ -30,7 +27,6 @@ func cutSticks(_ input: [Int]) -> [Int] {
     if newArray.count == 0 {
         return input
     }
-    
     return cutSticks(newArray)
 }
 

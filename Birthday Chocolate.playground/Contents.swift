@@ -1,12 +1,10 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let squares = [1,2,1,3,2]
-let ronBday = [3,2]
+let n = Int(readLine()!)!
+let squares = readLine()!.components(separatedBy:" ").map { Int($0)! }
+let ronBday = readLine()!.components(separatedBy:" ").map { Int($0)! }
 
 let chocTotal = ronBday[0]
 let chocNum = ronBday[1]
@@ -22,6 +20,5 @@ for (index,_) in squares.enumerated() {
         }
     }
 }
-
 
 print(count)

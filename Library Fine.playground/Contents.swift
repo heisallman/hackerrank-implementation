@@ -1,12 +1,10 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
-
-var str = "Hello, playground"
+// Enter your code here
 
 
-let returnDate = [28,2,2015]
-let dueDate = [15,4,2015]
+let returnDate = readLine()!.components(separatedBy:" ").map { Int($0)! }
+let dueDate = readLine()!.components(separatedBy:" ").map { Int($0)! }
 
 func libraryFine(returned a:[Int], due b:[Int]) -> Int {
     
@@ -40,5 +38,4 @@ func libraryFine(returned a:[Int], due b:[Int]) -> Int {
     }
 }
 
-
-libraryFine(returned: returnDate, due: dueDate)
+print(libraryFine(returned: returnDate, due: dueDate))

@@ -1,13 +1,10 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let array = [10,2,3]
-let keyboards = [3,1]
-let usbDrives = [5,2,8]
+let array = readLine()!.components(separatedBy: " ").map{Int($0)!}
+let keyboards = readLine()!.components(separatedBy: " ").map{Int($0)!}
+let usbDrives = readLine()!.components(separatedBy: " ").map{Int($0)!}
 
 
 let money = array[0]

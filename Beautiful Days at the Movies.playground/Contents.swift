@@ -1,16 +1,12 @@
-//: Playground - noun: a place where people can play
+import Foundation;
 
-import UIKit
+// Enter your code here
 
-var str = "Hello, playground"
-
-
-let array = [20,23,6]
+let array = readLine()!.components(separatedBy:" ").map { Int($0)! }
 
 let days = Array(array[0]...array[1])
 let divisor = array[2]
 var beautifulDays = 0
-
 
 func reverse(input: Int) -> Int {
     var result = 0
