@@ -5,8 +5,8 @@ import UIKit
 var str = "Hello, playground"
 
 
-let squares = [4]
-let ronBday = [4,1]
+let squares = [1,2,1,3,2]
+let ronBday = [3,2]
 
 let chocTotal = ronBday[0]
 let chocNum = ronBday[1]
@@ -20,7 +20,6 @@ for (index,_) in squares.enumerated() {
         if subArray.reduce(0, { $0 + $1 }) == chocTotal {
             count += 1
         }
-        print(subArray)
     }
 }
 
